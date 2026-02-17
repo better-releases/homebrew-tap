@@ -1,35 +1,37 @@
 class Brel < Formula
   desc "better-releases cli tool"
   homepage "https://better-releases.com"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/better-releases/brel/releases/download/0.1.0/brel-aarch64-apple-darwin.tar.xz"
-      sha256 "4aaa3544e99959e0da09c0d0a83776db5debd45beb15f4220bae470ce3839470"
+      url "https://github.com/better-releases/brel/releases/download/0.1.1/brel-aarch64-apple-darwin.tar.xz"
+      sha256 "55638cb43e311072413d6f4adb05a16d16a487f53c7529e9241784b4b9d0b02a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/better-releases/brel/releases/download/0.1.0/brel-x86_64-apple-darwin.tar.xz"
-      sha256 "982177f6742c0628a48abee831a3fadc2ddba3f0fc4cce58a968ec4bb5a35131"
+      url "https://github.com/better-releases/brel/releases/download/0.1.1/brel-x86_64-apple-darwin.tar.xz"
+      sha256 "b11c1a139bb94d7780bc75879618b92a3bd5882c978817b31fcecdb581cd4164"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/better-releases/brel/releases/download/0.1.0/brel-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ebc936c562520026de8c9b6d24b4cf5a3f6465710eb774f18098936c585a3eca"
+      url "https://github.com/better-releases/brel/releases/download/0.1.1/brel-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6cbce34fbf66f6bdb9d5175d3efcbea84ee8c44b5ba207cb025d0b42c6ff6ebf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/better-releases/brel/releases/download/0.1.0/brel-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "47006ca190d7a18762b89810648c92a8b1aaae8fd00b297443c7a921259ac02c"
+      url "https://github.com/better-releases/brel/releases/download/0.1.1/brel-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e10f2b17e07ee388871ae6095ce3bce5a1657e8bc5694aa98888907d4113ad88"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
-    "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-pc-windows-gnu":     {},
-    "x86_64-unknown-linux-gnu":  {},
+    "aarch64-apple-darwin":              {},
+    "aarch64-unknown-linux-gnu":         {},
+    "x86_64-apple-darwin":               {},
+    "x86_64-pc-windows-gnu":             {},
+    "x86_64-unknown-linux-gnu":          {},
+    "x86_64-unknown-linux-musl-dynamic": {},
+    "x86_64-unknown-linux-musl-static":  {},
   }.freeze
 
   def target_triple
