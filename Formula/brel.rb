@@ -1,25 +1,25 @@
 class Brel < Formula
   desc "better-releases cli tool"
   homepage "https://better-releases.com"
-  version "0.6.0"
+  version "0.7.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/better-releases/brel/releases/download/0.6.0/brel-aarch64-apple-darwin.tar.xz"
-      sha256 "ac35b74f327d3651f46348e2eb9941e6dff4566fc3ae90919c32b1bfa8337533"
+      url "https://github.com/better-releases/brel/releases/download/0.7.0/brel-aarch64-apple-darwin.tar.xz"
+      sha256 "cb9f1184f3bffaf2b98175fbed59632e7839b08f39956f319cedf5b9ba0e01e5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/better-releases/brel/releases/download/0.6.0/brel-x86_64-apple-darwin.tar.xz"
-      sha256 "6e90f2ce515b0fb2e47e453f4074a75f65ac8683232bb65d874ba5e2e97fb4a8"
+      url "https://github.com/better-releases/brel/releases/download/0.7.0/brel-x86_64-apple-darwin.tar.xz"
+      sha256 "41c0d0f5ea98ff2a712bea335d9d7c9a93859806bd8b43e6e0a42fd2be4a27fd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/better-releases/brel/releases/download/0.6.0/brel-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "52b6318b3a4754cdb97033f13c20ce26c179ac7a672bb0cf61bf6c91f0ed33b8"
+      url "https://github.com/better-releases/brel/releases/download/0.7.0/brel-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "eaa02ee0aa892137a4c89f8320771b529bc56b963456cdb10d893be429b11c76"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/better-releases/brel/releases/download/0.6.0/brel-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1564ff9600ed806a9e049c66b8359aec23bad711c96dbfa33342a770b942804c"
+      url "https://github.com/better-releases/brel/releases/download/0.7.0/brel-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a576b57a3f0007e4bf7cbc82b982f8cf4fe71108a71780b8ee083e59d2ab948d"
     end
   end
   license "MIT"
